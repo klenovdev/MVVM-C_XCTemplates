@@ -6,7 +6,7 @@ class ___VARIABLE_productName___ViewModel {
   
     // MARK: Public properties
     
-    weak var coordinator: ___VARIABLE_productName___CoordinatorProtocol?
+    public weak var coordinator: ___VARIABLE_productName___CoordinatorProtocol?
     
     
     // MARK: Private properties

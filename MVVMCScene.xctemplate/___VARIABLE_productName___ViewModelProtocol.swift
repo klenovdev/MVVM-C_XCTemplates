@@ -2,7 +2,7 @@
 
 import Foundation
 
-protocol ___VARIABLE_productName___ViewModelProtocol: ViewModelProtocol {
+protocol ___VARIABLE_productName___ViewModelProtocol {
     
     var coordinator: ___VARIABLE_productName___CoordinatorProtocol? { get set }
     

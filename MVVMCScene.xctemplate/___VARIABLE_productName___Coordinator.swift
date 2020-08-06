@@ -4,9 +4,6 @@ import UIKit
 
 class ___VARIABLE_productName___Coordinator: BaseCoordinator {
   
-    // MARK: Public properties
-    
-    
     // MARK: Private properties
     
     private var viewModel: ___VARIABLE_productName___ViewModelProtocol?
@@ -24,11 +21,11 @@ class ___VARIABLE_productName___Coordinator: BaseCoordinator {
     
     override func start() -> UIViewController? {
         
-        if let newViewController = super.start() {
+        if let viewController = super.start() {
             
-            parentCoordinatorDelegate?.push(newViewController, animated: true)
+            parrentCoordinator?.pushViewController(viewController, animated: true)
             
-            return newViewController
+            return viewController
         }
 
         return nil
@@ -39,15 +36,15 @@ class ___VARIABLE_productName___Coordinator: BaseCoordinator {
     
     override func createViewController() -> UIViewController? {
         
-       guard let sceneViewModel = viewModel else {
+        guard let sceneViewModel = viewModel else {
             return nil
         }
         
-        let sceneViewController = ___VARIABLE_productName___ViewController.xibInit(viewModel: sceneViewModel)
+        let viewController = ___VARIABLE_productName___ViewController(viewModel: sceneViewModel)
         
         viewModel = nil
         
-        return sceneViewController
+        return viewController
     }
     
 }
