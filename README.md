@@ -2,8 +2,9 @@
 
 Installation
 ---- 
+### Using terminal 
 
-    $ git clone https://github.com/klenovdev/MVVM-C_XCTemplates.git
-    $ mkdir -p ~/Library/Developer/Xcode/Templates/
-    $ cd MVVM-C_XCTemplates
-    $ cp -R * ~/Library/Developer/Xcode/Templates/
+	$ git clone https://github.com/klenovdev/MVVM-C_XCTemplates.git
+	$ cd MVVM-C_XCTemplates
+	$ mkdir -p ~/Library/Developer/Xcode/Templates/
+	$ cp -R * ~/Library/Developer/Xcode/Templates/
